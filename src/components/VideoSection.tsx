@@ -29,10 +29,10 @@ const VideoSection = ({ videoUrl, overlayTitle, caption, fullWidth = true }: Vid
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4 lg:px-8">
               <div className="max-w-2xl space-y-4 animate-fade-in">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                   {overlayTitle}
                 </h2>
-                <p className="text-lg lg:text-xl text-secondary-foreground/80">
+                <p className="text-lg lg:text-xl text-white/90">
                   {caption}
                 </p>
               </div>

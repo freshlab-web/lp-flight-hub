@@ -47,11 +47,11 @@ const ProductShowcase = () => {
       
       <div className="container relative mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Drones profissionais de{" "}
             <span className="gradient-text">alto desempenho</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white/80">
             Hardware enterprise homologado para as operações mais exigentes.
           </p>
         </div>
@@ -82,7 +82,7 @@ const ProductShowcase = () => {
 
               {/* Content */}
               <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold text-secondary-foreground">
+                <h3 className="text-xl font-bold text-white">
                   {product.name}
                 </h3>
 
@@ -91,7 +91,7 @@ const ProductShowcase = () => {
                   {product.features.map((feature) => (
                     <div
                       key={feature.text}
-                      className="flex items-center gap-3 text-muted-foreground"
+                      className="flex items-center gap-3 text-white/80"
                     >
                       <feature.icon className="w-4 h-4 text-primary flex-shrink-0" />
                       <span className="text-sm">{feature.text}</span>
@@ -101,7 +101,7 @@ const ProductShowcase = () => {
 
                 {/* Best For */}
                 <div className="pt-4 border-t border-muted/10">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">
+                  <p className="text-xs text-white/60 uppercase tracking-wide mb-1">
                     Ideal para
                   </p>
                   <p className="text-sm font-semibold text-primary">
@@ -114,7 +114,7 @@ const ProductShowcase = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          <Button variant="outline" size="lg" className="group border-primary text-secondary-foreground hover:bg-primary hover:text-primary-foreground">
+          <Button variant="outline" size="lg" className="group border-primary text-white hover:bg-primary hover:text-primary-foreground">
             Ver especificações completas
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>
