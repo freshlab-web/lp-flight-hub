@@ -64,11 +64,11 @@ const FinalCTA = () => {
 
           {/* Content */}
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Evite custos e limitações{" "}
               <span className="gradient-text">no futuro</span>
             </h2>
-            <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg lg:text-xl text-white/80 max-w-2xl mx-auto">
               Escolha a arquitetura certa com quem entende de hardware e software.
             </p>
           </div>
@@ -82,18 +82,18 @@ const FinalCTA = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="flex flex-wrap justify-center gap-8 pt-8 opacity-60">
+          <div className="flex flex-wrap justify-center gap-8 pt-8 opacity-80">
             <div className="text-center">
-              <p className="text-2xl font-bold text-secondary-foreground">10+</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">Anos de experiência</p>
+              <p className="text-2xl font-bold text-white">10+</p>
+              <p className="text-xs text-white/70 uppercase tracking-wide">Anos de experiência</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-secondary-foreground">500+</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">Projetos entregues</p>
+              <p className="text-2xl font-bold text-white">500+</p>
+              <p className="text-xs text-white/70 uppercase tracking-wide">Projetos entregues</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-secondary-foreground">24/7</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">Suporte técnico</p>
+              <p className="text-2xl font-bold text-white">24/7</p>
+              <p className="text-xs text-white/70 uppercase tracking-wide">Suporte técnico</p>
             </div>
           </div>
         </div>

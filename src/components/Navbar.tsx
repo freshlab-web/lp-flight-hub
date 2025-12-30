@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
+import horusLogo from "@/assets/horus-logo.png";
+import djiResellerLogo from "@/assets/dji-authorized-reseller.png";
 
 const Navbar = () => {
   return (
@@ -10,19 +12,12 @@ const Navbar = () => {
           <div className="flex items-center gap-4 lg:gap-8">
             {/* Horus Logo */}
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-black tracking-tight text-foreground">
-                HORUS
-              </span>
+              <img src={horusLogo} alt="Horus Smart Detections" className="h-8 lg:h-10" />
             </a>
             
             {/* DJI Badge */}
-            <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-secondary rounded-md">
-              <span className="text-xs font-bold text-secondary-foreground tracking-wide">
-                DJI ENTERPRISE
-              </span>
-              <span className="text-[10px] text-muted-foreground font-medium">
-                AUTHORIZED RESELLER
-              </span>
+            <div className="hidden sm:flex items-center">
+              <img src={djiResellerLogo} alt="DJI Authorized Reseller" className="h-5 lg:h-6" />
             </div>
           </div>
 
