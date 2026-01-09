@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 
-const flighthubPlatform = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/dist/assets/flighthub-platform.png";
+const flighthubPlatform = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/src/assets/flighthub-platform.png";
 
 const features = [
   "Planejamento de missões 3D",

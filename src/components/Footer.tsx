@@ -1,5 +1,5 @@
-const horusLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/dist/assets/horus-logo.png";
-const djiResellerLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/dist/assets/dji-authorized-reseller.png";
+const horusLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/src/assets/horus-logo.png";
+const djiResellerLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/src/assets/dji-authorized-reseller.png";
 
 const Footer = () => {
   return (

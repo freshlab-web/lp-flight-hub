@@ -7,19 +7,11 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ContactModalProvider } from "@/context/ContactModalContext";
-import { useEffect } from "react";
-import { keptAssets } from "./keep-assets";
 
 const queryClient = new QueryClient();
 
-const App = () => {
-  // Ensure assets are included in the build for CDN usage
-  useEffect(() => {
-    (window as any)._keepAssets = keptAssets;
-  }, []);
-
-  return (
-    <HelmetProvider>
+const App = () => (
+  <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <ContactModalProvider>
@@ -36,7 +28,6 @@ const App = () => {
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
-  );
-};
+);
 
 export default App;
