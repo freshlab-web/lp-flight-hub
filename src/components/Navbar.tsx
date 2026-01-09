@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
-import horusLogo from "@/assets/horus-logo.png";
-import djiResellerLogo from "@/assets/dji-authorized-reseller.png";
 import { useContactModal } from "@/context/ContactModalContext";
+
+const horusLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/dist/assets/horus-logo.png";
+const djiResellerLogo = "https://cdn.jsdelivr.net/gh/freshlab-web/lp-flight-hub@main/dist/assets/dji-authorized-reseller.png";
 
 const Navbar = () => {
   const { openModal } = useContactModal();
