@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
 import horusLogo from "@/assets/horus-logo.png";
 import djiResellerLogo from "@/assets/dji-authorized-reseller.png";
+import { useContactModal } from "@/context/ContactModalContext";
 
 const Navbar = () => {
+  const { openModal } = useContactModal();
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-4 lg:px-8">
@@ -22,7 +25,7 @@ const Navbar = () => {
           </div>
 
           {/* Right: CTA */}
-          <Button variant="navCta" className="gap-2">
+          <Button variant="navCta" className="gap-2" onClick={openModal}>
             <MessageSquare className="w-4 h-4" />
             <span className="hidden sm:inline">Falar com Consultor</span>
             <span className="sm:hidden">Contato</span>

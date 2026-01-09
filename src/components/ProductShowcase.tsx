@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Battery, Cpu, Shield, Cloud, Zap, RefreshCw } from "lucide-react";
+import { useContactModal } from "@/context/ContactModalContext";
 
 const products = [
   {
@@ -39,6 +40,8 @@ const products = [
 ];
 
 const ProductShowcase = () => {
+  const { openModal } = useContactModal();
+
   return (
     <section className="py-24 bg-secondary relative overflow-hidden">
       {/* Background effects */}
@@ -114,7 +117,7 @@ const ProductShowcase = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          <Button variant="outline" size="lg" className="group border-primary text-white hover:bg-primary hover:text-primary-foreground">
+          <Button variant="outline" size="lg" className="group border-primary text-white hover:bg-primary hover:text-primary-foreground" onClick={openModal}>
             Ver especificações completas
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>

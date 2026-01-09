@@ -1,15 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Shield, ArrowRight } from "lucide-react";
+import { Shield } from "lucide-react";
+import RDStationForm from "./RDStationForm";
 
 const HeroSection = () => {
   return (
@@ -65,93 +56,8 @@ const HeroSection = () => {
           >
             <div className="bg-card rounded-2xl shadow-2xl p-8 lg:p-10 border border-border/50">
               <div className="space-y-6">
-                <div className="space-y-2">
-                  <h2 className="text-2xl font-bold text-card-foreground">
-                    Solicite contato técnico
-                  </h2>
-                  <p className="text-muted-foreground">
-                    Nossa equipe entrará em contato em até 24h
-                  </p>
-                </div>
-
-                <form className="space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Nome</Label>
-                      <Input 
-                        id="name" 
-                        placeholder="Seu nome completo" 
-                        className="h-12"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email Corporativo</Label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="email@empresa.com" 
-                        className="h-12"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Empresa</Label>
-                      <Input 
-                        id="company" 
-                        placeholder="Nome da empresa" 
-                        className="h-12"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="role">Cargo</Label>
-                      <Input 
-                        id="role" 
-                        placeholder="Seu cargo" 
-                        className="h-12"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="segment">Segmento</Label>
-                    <Select>
-                      <SelectTrigger className="h-12">
-                        <SelectValue placeholder="Selecione seu segmento" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="energia">Energia Solar</SelectItem>
-                        <SelectItem value="utilities">Utilities & O&M</SelectItem>
-                        <SelectItem value="telecom">Telecom</SelectItem>
-                        <SelectItem value="industria">Indústria & Portos</SelectItem>
-                        <SelectItem value="smartcities">Smart Cities</SelectItem>
-                        <SelectItem value="seguranca">Segurança Patrimonial</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="interest">Interesse Principal</Label>
-                    <Select>
-                      <SelectTrigger className="h-12">
-                        <SelectValue placeholder="O que você procura?" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="drones">Drones Enterprise</SelectItem>
-                        <SelectItem value="dock">DJI Dock (Automação)</SelectItem>
-                        <SelectItem value="payloads">Payloads & Câmeras</SelectItem>
-                        <SelectItem value="projeto">Projeto Completo</SelectItem>
-                        <SelectItem value="consultoria">Consultoria Técnica</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <Button variant="hero" size="lg" className="w-full group">
-                    Receber Consultoria
-                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </form>
+                
+                <RDStationForm />
               </div>
             </div>
           </div>

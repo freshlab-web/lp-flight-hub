@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Cpu } from "lucide-react";
+import { useContactModal } from "@/context/ContactModalContext";
 
 const FinalCTA = () => {
+  const { openModal } = useContactModal();
+
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Dark background with map pattern */}
@@ -75,7 +78,7 @@ const FinalCTA = () => {
 
           {/* CTA Button */}
           <div className="pt-4">
-            <Button variant="hero" size="xl" className="group">
+            <Button variant="hero" size="xl" className="group" onClick={openModal}>
               Falar com especialista em Hardware
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
