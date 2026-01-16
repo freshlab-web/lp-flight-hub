@@ -18,11 +18,11 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: "assets/index-2.js",
-        chunkFileNames: "assets/index-2-[hash].js",
+        entryFileNames: "assets/index-3.js",
+        chunkFileNames: "assets/index-3-[hash].js",
         assetFileNames: (assetInfo) => {
           if (assetInfo.name && assetInfo.name.endsWith(".css")) {
-            return "assets/index-2.css";
+            return "assets/index-3.css";
           }
           return "assets/[name].[ext]";
         },
