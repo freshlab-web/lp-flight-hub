@@ -25,8 +25,8 @@ const HeroSection = () => {
 
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-                Hardware profissional para{" "}
-                <span className="text-white">operações críticas</span>
+                Drone profissional para operações críticas{" "}
+                <span className="text-white"></span>
               </h1>
               
               <p className="text-lg lg:text-xl text-white/90 max-w-lg leading-relaxed">
