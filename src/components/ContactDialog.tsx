@@ -19,7 +19,7 @@ const ContactDialog = ({ open, onOpenChange }: ContactDialogProps) => {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-3xl w-[90%] h-[80vh] p-0 overflow-hidden bg-white">
         <iframe 
-          src="/contact-form.html" 
+          src="https://lps.novainterface.com.br/horus/index.html" 
           className="w-full h-full border-0"
           title="Formulário de Contato"
         />
