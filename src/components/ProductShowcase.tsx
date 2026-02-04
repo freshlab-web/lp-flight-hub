@@ -13,7 +13,7 @@ const products = [
       { icon: RefreshCw, text: "Rápida implementação" },
     ],
     bestFor: "Segurança e Inspeções rápidas",
-    badge: "Enterprise",
+    badge: "Popular",
   },
   {
     name: "DJI Matrice 30 Series",
@@ -25,7 +25,7 @@ const products = [
       { icon: Shield, text: "Proteção IP55" },
     ],
     bestFor: "Inspeções pesadas e LiDAR",
-    badge: "Popular",
+    badge: "Enterprise",
   },
   {
     name: "DJI Dock 3",
