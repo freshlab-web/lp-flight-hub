@@ -5,25 +5,26 @@ import { useContactModal } from "@/context/ContactModalContext";
 
 const products = [
   {
-    name: "DJI Matrice 350 RTK",
+    name: "DJI Matrice 4T",
     image: "https://horus.global/wp-content/uploads/2025/11/matrice4-min-534x403.png",
-    features: [
-      { icon: Battery, text: "Autonomia estendida" },
-      { icon: Cpu, text: "Carga útil múltipla" },
-      { icon: Shield, text: "Proteção IP55" },
-    ],
-    bestFor: "Inspeções pesadas e LiDAR",
-    badge: "Enterprise",
-  },
-  {
-    name: "DJI Matrice 30 Series",
-    image: "https://horus.global/wp-content/uploads/2025/11/matrice30series-min-534x403.png",
     features: [
       { icon: Zap, text: "Portabilidade extrema" },
       { icon: Cpu, text: "Híbrido" },
       { icon: RefreshCw, text: "Rápida implementação" },
     ],
     bestFor: "Segurança e Inspeções rápidas",
+    badge: "Enterprise",
+  },
+  {
+    name: "DJI Matrice 30 Series",
+    image: "https://horus.global/wp-content/uploads/2025/11/matrice30series-min-534x403.png",
+    features: [
+      
+      { icon: Battery, text: "Autonomia estendida" },
+      { icon: Cpu, text: "Carga útil múltipla" },
+      { icon: Shield, text: "Proteção IP55" },
+    ],
+    bestFor: "Inspeções pesadas e LiDAR",
     badge: "Popular",
   },
   {
